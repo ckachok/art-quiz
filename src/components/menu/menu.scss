@@ -1,0 +1,23 @@
+.menu {
+  width: 250px;
+  margin-left: 120px;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    padding-right: 20px;
+  }
+  &__link {
+    transition: color .8s;
+
+    &:hover {
+      color: #ffb500;
+      transition: color .8s;
+    }
+    &_active {
+      color: #b8860b;
+    }
+  }  
+}

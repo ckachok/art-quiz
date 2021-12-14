@@ -1,0 +1,65 @@
+.question {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 25px;
+  width: 100%;
+  animation: .5s linear increase;
+
+  &__text {
+    font-family: "Gilroy";
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 28px;
+    letter-spacing: -0.5px;
+  }
+  
+  &__picture {
+    width: 500px;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+  }
+  
+  &__answers-container {
+    display: flex;
+    max-width: 1050px;
+    column-gap: 10px;
+  }
+  
+  &__answer-artists_correct {
+    background: linear-gradient(45deg, rgb(20, 221, 97), rgb(9, 204, 210), rgb(212, 246, 20));
+    box-shadow: 0px 0px 10px #fff, 0px 0px 10px #fff, 0px 0px 25px #fff,
+                0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff,
+                0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 50px #fff, 0px 0px 50px #fff;
+  }
+  
+  &__answer-artists_incorrect {
+    background: linear-gradient(45deg, rgb(255, 0, 0), rgb(244, 55, 14), rgb(248, 191, 20));
+    box-shadow: 0px 0px 10px #fff, 0px 0px 10px #fff, 0px 0px 25px #fff,
+                0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff,
+                0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 50px #fff, 0px 0px 50px #fff;
+  }
+  
+  &__answer-pictures {
+    width: 250px;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &_correct {
+      filter: sepia(100%) hue-rotate(90deg) saturate(300%);
+      box-shadow: 0px 0px 10px #fff, 0px 0px 10px #fff, 0px 0px 25px #fff,
+                  0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff,
+                  0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 50px #fff, 0px 0px 50px #fff;
+    }
+    
+    &_incorrect {
+      filter: sepia(100%) hue-rotate(-50deg) saturate(300%);
+      box-shadow: 0px 0px 10px #fff, 0px 0px 10px #fff, 0px 0px 25px #fff,
+                  0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff,
+                  0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 50px #fff, 0px 0px 50px #fff;
+    }
+  }
+}

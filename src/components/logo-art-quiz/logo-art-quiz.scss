@@ -1,0 +1,33 @@
+.logo-art-quiz {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & span {
+    color: #ffb500;
+  }
+
+  &__circle {
+    display: block;
+    width: 165px;
+    height: 165px;
+    border-radius: 100%;
+    border: 3px solid #FFF;
+  }
+
+  &__right-circle {
+    position: relative;
+    left: -194px;
+  }
+
+  &__text {
+    position: absolute;
+    margin: 0 0 0 42px;
+    font-family: "Gilroy";
+    font-weight: 700;
+    font-size: 112px;
+    line-height: 159px;
+    letter-spacing: -2.5px;
+  }
+}

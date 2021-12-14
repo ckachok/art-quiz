@@ -1,0 +1,19 @@
+.dev-info {
+  display: flex;
+  justify-content: space-between;
+  width: 270px;
+  font-family: "Gilroy";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.5px;
+
+  &__developer {
+    transition: color .6s;
+
+    &:hover {
+      color: #b8860b;
+      transition: color .6s;
+    }
+  }
+}

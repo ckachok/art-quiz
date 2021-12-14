@@ -1,0 +1,18 @@
+#home {
+  background-image: url("../../assets/img/home__bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  & .header__container {
+    justify-content: flex-end;
+  }
+}
+
+.home-page__controls {
+  display: flex;
+  justify-content: space-between;
+  width: 614px;
+  margin: 0 auto;
+  padding: 100px 0 0;
+}

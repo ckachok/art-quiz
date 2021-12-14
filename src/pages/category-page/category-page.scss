@@ -1,0 +1,16 @@
+#category-artists,
+#category-pictures {
+  & .btn-settings,
+  & .btn-settings {
+    margin-left: auto;
+  }
+
+  & .main__container,
+  & .main__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 30px;
+  }
+}

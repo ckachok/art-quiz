@@ -1,0 +1,91 @@
+.quiz {
+  position: relative;
+  width: 195px;
+  height: 240px;
+  background-color: transparent;
+  filter: grayscale(1);
+  animation: .5s linear 0s normal none running increase;
+  cursor: pointer;
+  overflow: hidden;
+
+  &_active {
+    filter: grayscale(0);
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+  }
+
+  &__title {
+    color: #ffb500;
+    text-transform: capitalize;
+  }
+
+  &__text {
+    font-family: "Gilroy";
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: -0.6px;
+  }
+
+  &__cover {
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 25px;
+    transition: background-image 1s ease-in-out;  
+  }
+
+  &__score {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    opacity: 0;
+    transition: opacity .8s;
+
+    .quiz:hover & {
+      opacity: 1;
+      transition: opacity .8s;
+    }
+  }
+
+  &__stars-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &-star {
+    width: 25px;
+    height: 25px;
+    background-image: url("../../assets/svg/quiz_star.svg");
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    filter: grayscale(1);
+
+    &_active {
+      filter: grayscale(0);
+    }
+  }
+}
+
+@keyframes increase {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

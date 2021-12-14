@@ -1,0 +1,78 @@
+.header {
+  &__container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100px;
+  }
+
+  &__logo-art-quiz {
+    width: 170px;
+    margin: 0;
+
+    & .logo-art-quiz__circle {
+      width: 62px;
+      height: 62px;
+      border: 2px solid rgba(255, 255, 255, 0.5);
+    }
+    
+    & .logo-art-quiz__right-circle {
+      left: -73px;
+    }
+    
+    & .logo-art-quiz__text {
+      margin: 0 0 0 17px;
+      font-size: 42px;
+      line-height: 60px;
+      letter-spacing: -0.9px;
+    }
+  }
+}
+
+.main__logo-art-quiz {
+  width: 450px;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: "Gilroy";
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 28px;
+  letter-spacing: -0.5px;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100px;
+}
+
+.btn-settings {
+  display: block;
+  width: 36px;
+  height: 36px;
+  background-repeat: no-repeat;
+
+  &_open {
+    background-image: url("../assets/svg/btn_setting_open.svg");
+  }
+
+  &_close {
+    background-image: url("../assets/svg/btn_setting_close.svg");
+  }
+
+  &:hover {
+    animation: 2s linear 0s normal none infinite running rot;
+  }
+}
+
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

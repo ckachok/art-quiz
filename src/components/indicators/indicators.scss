@@ -1,0 +1,20 @@
+.indicators {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+
+  &__item {
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+
+    &_correct {
+      background: linear-gradient(45deg, rgb(20, 221, 97), rgb(9, 204, 210), rgb(212, 246, 20));
+    }
+
+    &_incorrect {
+      background: linear-gradient(45deg, rgb(255, 0, 0), rgb(244, 55, 14), rgb(248, 191, 20));
+    }
+  }
+}
